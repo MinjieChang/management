@@ -1,0 +1,49 @@
+.root {
+    width: 100%;
+    height: 98px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    box-shadow: 0px 3px 3px -3px #ccc;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -7px;
+        right: 46px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+    }
+}
+.commentBtn {
+    width: 40px;
+    padding: 4px 10px;
+    font-size: 12px;
+    background-color: #ff8140;
+    border: 1px solid #ff8140;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    &:hover{
+        background-color: #f77c3d;
+    }
+}
+.input {
+    outline: none;
+    height: 28px;
+    padding: 5px 2px 5px 6px;
+    border: 1px solid #ccc;
+    &:focus {
+        border: 1px solid #eb7350;
+    }
+}

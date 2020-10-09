@@ -1,0 +1,82 @@
+@import './layout.less';
+html,
+body,
+:global(#app) {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'PingFang SC', 'Microsoft YaHei UI', serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+:global(div) {
+    box-sizing: content-box;
+}
+/* :global(.mb10) {
+    margin-bottom: 10px;
+} */
+
+.divider {
+    width: 1px;
+    height: 8px;
+    margin: 0 6px;
+    background: #ccc;
+    display: inline-block;
+}
+.horizon {
+    height: 0.6px;
+    width: 100%;
+    background: #eee;
+    display: inline-block;
+}
+.pointer {
+    cursor: pointer;
+}
+
+/* 自定义antd颜色 */
+/* .ant-btn {
+    background-color: #1890ff
+} */
+.anticon {
+    color: #1890ff
+}
+.inheritHeight {
+    height: inherit;
+}
+.inheritWeight {
+    width: inherit;
+}
+.inheritColor {
+    color: inherit;
+}
+
+.overFH {
+    overflow: hidden;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 字体 */
+.fontSize12 {
+    font-size: 12px
+}
+.fontSize20 {
+    font-size: 20px
+}
+
+/* 布局 */
+.positionRelative {
+    position: relative;
+}
+.textAlignLeft {
+    text-align: left
+}
+.textAlignRight {
+    text-align: right
+}
+.textAlignCenter {
+    text-align: center
+}

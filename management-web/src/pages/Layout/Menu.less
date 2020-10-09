@@ -1,0 +1,55 @@
+@import '../../less/layout';
+@import '../../less/color';
+
+.hover {
+	color: #37bd78;
+	fill: #37bd78;
+}
+.show {
+	display: block;
+}
+.hidden {
+	display: none;
+}
+
+.root {
+	.layoutColumn;
+	.perMenu {
+		.layoutColumn;
+		.menuTitle {
+			height: 56px;
+			padding-left: 30px;
+			.layoutRow;
+			.startCenter;
+			cursor: pointer;
+			&:hover {
+				.hover;
+			}
+			div:first-child {
+				margin-right: 10px;
+			}
+		}
+		.menuChild {
+			.layoutRow;
+			padding-left: 30px;
+			.childLine {
+				margin-left: 10px;
+				width: 2px;
+				background: @lightGray;
+			}
+			.childContainer {
+				.flex1;
+				.layoutColumn;
+				.perChild {
+					height: 50px;
+					line-height: 50px;
+					padding-left: 20px;
+					cursor: pointer;
+					&:hover {
+						.hover;
+					}
+				}
+			}
+		}
+	}
+}

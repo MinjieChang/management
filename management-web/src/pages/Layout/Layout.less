@@ -1,0 +1,60 @@
+@import '../../less/layout';
+@import '../../less/color';
+
+.root {
+    height: 100%;
+    .layoutRow;
+    .menu {
+        width: 200px;
+        .layoutColumn;
+        .flex0;
+        .productName {
+            .layoutColumn;
+            .centerCenter;
+            height: 80px;
+            background: #ccc;
+        }
+    }
+    .content {
+        .flex1;
+        .layoutColumn;
+        padding: 10px;
+        // overflow: auto;
+        // overflow-y: hidden;
+        overflow-y: auto;
+        overflow-x: auto;
+        background: @themeBg;
+        .contentHeader {
+            .flex0;
+            height: 60px;
+            padding: 10px;
+            background: #fff;
+            margin-bottom: 10px;
+            min-width: 1040px;
+        }
+        .contentContainer {
+            .flex1;
+            .layoutColumn;
+            .startCenter;
+            min-width: 1040px;
+            // overflow-y: auto;
+            // overflow-x: hidden;
+            // padding: 20px;
+            padding: 10px;
+            background: #fff;
+            .childContent {
+                .flex1;
+                // .layoutColumn;
+                // .startCenter;
+                width: 100%;
+                // background: #fff;
+                // overflow-y: auto;
+                
+                box-sizing: content-box;
+            }
+        }
+    }
+}
+.title {
+    color: red;
+}
